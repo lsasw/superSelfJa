@@ -3,3 +3,10 @@ docs-src/.vuepress/.cache/
 docs-src/.vuepress/.temp/
 docs-src/.vuepress/dist/
 *.tsbuildinfo
+
+# Claude Code 配置（包含 Token）
+.claude/settings.json
+.claude/settings.local.json
+
+# 系统文件
+.DS_Store
