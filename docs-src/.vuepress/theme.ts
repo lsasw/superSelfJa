@@ -1,16 +1,16 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
 export default hopeTheme({
-  hostname: "https://your-domain.com",
+  hostname: "https://lsasw.github.io",
 
   author: {
-    name: "作者名称",
-    url: "https://your-domain.com",
+    name: "lsasw",
+    url: "https://github.com/lsasw",
   },
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "https://github.com/your-repo",
+  repo: "https://github.com/lsasw/superSelfJa",
 
   docsDir: "docs-src",
 
@@ -19,12 +19,41 @@ export default hopeTheme({
     "/",
     "/docs/",
     {
-      text: "指南",
-      icon: "book",
-      prefix: "/docs/",
+      text: "设计模式",
+      icon: "puzzle-piece",
+      prefix: "/docs/java-patterns/",
       children: [
-        { text: "快速开始", icon: "rocket", link: "quick-start" },
-        { text: "配置说明", icon: "cog", link: "config" },
+        { text: "创建型模式", icon: "code", link: "creation" },
+        { text: "结构型模式", icon: "project-diagram", link: "structural" },
+        { text: "行为型模式", icon: "exchange-alt", link: "behavioral" },
+      ],
+    },
+    {
+      text: "Spring",
+      icon: "leaf",
+      prefix: "/docs/spring-core/",
+      children: [
+        { text: "IoC 容器", icon: "box", link: "ioc" },
+        { text: "AOP 切面", icon: "layer-group", link: "aop" },
+        { text: "事务管理", icon: "sync", link: "transaction" },
+      ],
+    },
+    {
+      text: "Spring Boot",
+      icon: "boot",
+      prefix: "/docs/spring-boot/",
+      children: [
+        { text: "自动配置", icon: "cogs", link: "auto-config" },
+      ],
+    },
+    {
+      text: "数据库",
+      icon: "database",
+      prefix: "/docs/database/",
+      children: [
+        { text: "MySQL", icon: "server", link: "mysql" },
+        { text: "MongoDB", icon: "leaf", link: "mongodb" },
+        { text: "Redis", icon: "bolt", link: "redis" },
       ],
     },
   ],
@@ -34,12 +63,41 @@ export default hopeTheme({
     "/docs/": [
       "",
       {
-        text: "入门指南",
-        icon: "lightbulb",
-        prefix: "",
+        text: "Java 设计模式",
+        icon: "puzzle-piece",
+        prefix: "java-patterns/",
         children: [
-          { text: "快速开始", icon: "rocket", link: "quick-start" },
-          { text: "配置说明", icon: "cog", link: "config" },
+          { text: "创建型模式", icon: "code", link: "creation" },
+          { text: "结构型模式", icon: "project-diagram", link: "structural" },
+          { text: "行为型模式", icon: "exchange-alt", link: "behavioral" },
+        ],
+      },
+      {
+        text: "Spring 核心",
+        icon: "leaf",
+        prefix: "spring-core/",
+        children: [
+          { text: "IoC 容器", icon: "box", link: "ioc" },
+          { text: "AOP 切面", icon: "layer-group", link: "aop" },
+          { text: "事务管理", icon: "sync", link: "transaction" },
+        ],
+      },
+      {
+        text: "Spring Boot",
+        icon: "boot",
+        prefix: "spring-boot/",
+        children: [
+          { text: "自动配置原理", icon: "cogs", link: "auto-config" },
+        ],
+      },
+      {
+        text: "数据库",
+        icon: "database",
+        prefix: "database/",
+        children: [
+          { text: "MySQL 进阶", icon: "server", link: "mysql" },
+          { text: "MongoDB 实战", icon: "leaf", link: "mongodb" },
+          { text: "Redis 缓存", icon: "bolt", link: "redis" },
         ],
       },
     ],
