@@ -3,7 +3,7 @@ import theme from "./theme.js";
 import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/superSelfJa/",
 
   lang: "zh-CN",
   title: "文档中心",
