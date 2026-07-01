@@ -283,6 +283,7 @@ export default hopeTheme({
   author: {
     name: "lsasw",
     url: "https://github.com/lsasw",
+    avatar: "/avatar-lg.png",
   },
 
   logo: "/avatar-lg.png",
@@ -293,6 +294,9 @@ export default hopeTheme({
   repo: "https://github.com/lsasw/superSelfJa",
 
   docsDir: "docs-src",
+
+  // 禁用文章元信息（作者、阅读时间等），目录页不需要显示
+  pageInfo: false,
 
   // ============================================================
   //  顶部导航栏
