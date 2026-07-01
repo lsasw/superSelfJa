@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" fill="none">
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="40%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Blue accent gradient -->
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+
+    <!-- Purple accent -->
+    <linearGradient id="purpleAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40,0 L0,0 L0,40" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+
+    <!-- Dot pattern -->
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#60a5fa" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#heroBg)"/>
+
+  <!-- Grid overlay -->
+  <rect width="1200" height="500" fill="url(#grid)"/>
+
+  <!-- Decorative large circles (background glow) -->
+  <circle cx="950" cy="120" r="180" fill="#3b82f6" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="1050" cy="380" r="140" fill="#8b5cf6" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="150" cy="400" r="120" fill="#06b6d4" opacity="0.03" filter="url(#softGlow)"/>
+
+  <!-- Floating geometric shapes -->
+  <g opacity="0.15">
+    <!-- Hexagon left -->
+    <polygon points="80,150 110,135 140,150 140,180 110,195 80,180"
+             stroke="#3b82f6" stroke-width="1.5" fill="none">
+      <animateTransform attributeName="transform" type="rotate" from="0 110 165" to="360 110 165" dur="60s" repeatCount="indefinite"/>
+    </polygon>
+
+    <!-- Triangle top right -->
+    <polygon points="1020,60 1060,130 980,130"
+             stroke="#8b5cf6" stroke-width="1.5" fill="none">
+      <animateTransform attributeName="transform" type="rotate" from="0 1020 95" to="-360 1020 95" dur="45s" repeatCount="indefinite"/>
+    </polygon>
+
+    <!-- Small square bottom right -->
+    <rect x="1080" y="350" width="36" height="36" rx="4"
+          stroke="#06b6d4" stroke-width="1" fill="none">
+      <animateTransform attributeName="transform" type="rotate" from="0 1098 368" to="360 1098 368" dur="30s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Circuit-like lines (right side decoration) -->
+  <g stroke="#3b82f6" stroke-width="1" opacity="0.12" fill="none">
+    <path d="M750,80 H820 V140 H900"/>
+    <path d="M780,420 H850 V360 H920"/>
+    <circle cx="900" cy="140" r="3" fill="#60a5fa"/>
+    <circle cx="920" cy="360" r="3" fill="#60a5fa"/>
+    <circle cx="820" cy="140" r="2" fill="#93c5fd"/>
+    <circle cx="850" cy="360" r="2" fill="#93c5fd"/>
+  </g>
+
+  <!-- Central visual: Hexagon + S logo + AI nodes (large, right side) -->
+  <g transform="translate(720, 90)">
+    <!-- Outer hexagon glow -->
+    <polygon points="170,0 285,66.5 285,199.5 170,266 55,199.5 55,66.5"
+             stroke="url(#blueAccent)" stroke-width="2" opacity="0.15" fill="none"/>
+
+    <!-- Inner hexagon -->
+    <polygon points="170,25 265,80 265,186 170,241 75,186 75,80"
+             stroke="#3b82f6" stroke-width="2" opacity="0.25" fill="#1e3a5f" opacity="0.3"/>
+
+    <!-- S letter shape (stylized) -->
+    <g transform="translate(115, 75)" opacity="0.85">
+      <!-- S top bar -->
+      <rect x="10" y="5" width="95" height="22" rx="4" fill="url(#blueAccent)"/>
+      <!-- S middle bar -->
+      <rect x="10" y="45" width="58" height="18" rx="4" fill="url(#blueAccent)"/>
+      <!-- S bottom bar -->
+      <rect x="10" y="78" width="95" height="22" rx="4" fill="url(#blueAccent)"/>
+      <!-- Right connectors -->
+      <rect x="92" y="27" width="13" height="22" rx="3" fill="url(#purpleAccent)" opacity="0.8"/>
+      <rect x="92" y="63" width="13" height="19" rx="3" fill="url(#purpleAccent)" opacity="0.8"/>
+      <!-- AI dot -->
+      <circle cx="73" cy="54" r="8" fill="#60a5fa" opacity="0.9"/>
+      <circle cx="73" cy="54" r="4" fill="#fff"/>
+    </g>
+
+    <!-- Orbiting nodes around hexagon -->
+    <g>
+      <circle cx="170" cy="-10" r="5" fill="#60a5fa" opacity="0.7" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="0 170 133" to="360 170 133" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="300" cy="133" r="4" fill="#a78bfa" opacity="0.6" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="0 170 133" to="360 170 133" dur="16s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="170" cy="276" r="5" fill="#06b6d4" opacity="0.65" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="0 170 133" to="360 170 133" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="40" cy="133" r="4" fill="#34d399" opacity="0.6" filter="url(#glow)">
+        <animateTransform attributeName="transform" type="rotate" from="0 170 133" to="360 170 133" dur="18s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Left side: Text area would be overlaid by VuePress hero text -->
+
+  <!-- Bottom tech stack labels (floating pills) -->
+  <g font-family="system-ui" font-size="11">
+    <!-- Java pill -->
+    <g transform="translate(60, 400)">
+      <rect width="70" height="26" rx="13" fill="#f97316" opacity="0.15" stroke="#fb923c" stroke-width="1"/>
+      <text x="35" y="17" text-anchor="middle" fill="#fed7aa">☕ Java</text>
+    </g>
+
+    <!-- Spring pill -->
+    <g transform="translate(145, 415)">
+      <rect width="76" height="26" rx="13" fill="#22c55e" opacity="0.15" stroke="#4ade80" stroke-width="1"/>
+      <text x="38" y="17" text-anchor="middle" fill="#bbf7d0">🌿 Spring</text>
+    </g>
+
+    <!-- Python pill -->
+    <g transform="translate(236, 398)">
+      <rect width="72" height="26" rx="13" fill="#3b82f6" opacity="0.15" stroke="#60a5fa" stroke-width="1"/>
+      <text x="36" y="17" text-anchor="middle" fill="#bfdbfe">🐍 Python</text>
+    </g>
+
+    <!-- LLM pill -->
+    <g transform="translate(322, 418)">
+      <rect width="64" height="26" rx="13" fill="#8b5cf6" opacity="0.15" stroke="#a78bfa" stroke-width="1"/>
+      <text x="32" y="17" text-anchor="middle" fill="#ddd6fe">🤖 LLM</text>
+    </g>
+
+    <!-- Agent pill -->
+    <g transform="translate(401, 402)">
+      <rect width="68" height="26" rx="13" fill="#06b6d4" opacity="0.15" stroke="#22d3ee" stroke-width="1"/>
+      <text x="34" y="17" text-anchor="middle" fill="#a5f3d4">🤖 Agent</text>
+    </g>
+  </g>
+
+  <!-- Subtle scan line effect -->
+  <line x1="0" y1="250" x2="1200" y2="250" stroke="#3b82f6" opacity="0.03" stroke-width="1"/>
+</svg>
