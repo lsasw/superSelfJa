@@ -29,6 +29,7 @@ export default hopeTheme({
         { text: "Spring 核心", icon: "leaf", link: "spring-core/" },
         { text: "Spring Boot", icon: "boot", link: "spring-boot/" },
         { text: "数据库", icon: "database", link: "database/" },
+        { text: "并发与 JVM", icon: "sync", link: "java-concurrency-jvm/" },
       ],
     },
     {
@@ -43,6 +44,18 @@ export default hopeTheme({
         { text: "大语言模型", icon: "robot", link: "ai-llm/" },
         { text: "AI 工程化", icon: "rocket", link: "ai-engineering/" },
         { text: "AI 应用", icon: "user-astronaut", link: "ai-applications/" },
+      ],
+    },
+    {
+      text: "实战专题",
+      icon: "laptop-code",
+      prefix: "/docs/",
+      children: [
+        { text: "Agent 工程化", icon: "robot", link: "ai-agent-engineering/" },
+        { text: "MCP 网关", icon: "server", link: "mcp-gateway/" },
+        { text: "RAG 向量数据库", icon: "search", link: "rag-vector-db/" },
+        { text: "系统设计", icon: "project-diagram", link: "system-design/" },
+        { text: "团队建设", icon: "users-cog", link: "team-process/" },
       ],
     },
     {
@@ -241,6 +254,73 @@ export default hopeTheme({
           { text: "AI for Science", icon: "flask", link: "97-ai-for-science" },
           { text: "具身智能", icon: "robot", link: "98-embodied-ai" },
           { text: "AI 面试题库", icon: "clipboard-list", link: "101-ai-interview-qa" },
+        ],
+      },
+      {
+        text: "数据库进阶",
+        icon: "database",
+        prefix: "database/",
+        children: [
+          { text: "MySQL 索引与 MVCC", icon: "server", link: "mysql-advanced" },
+          { text: "Redis 三大问题", icon: "bolt", link: "redis-advanced" },
+          { text: "Kafka + 自动配置", icon: "stream", link: "kafka-spring-autoconfig" },
+        ],
+      },
+      {
+        text: "Java 并发与 JVM",
+        icon: "sync",
+        prefix: "java-concurrency-jvm/",
+        children: [
+          { text: "并发编程实战", icon: "sync", link: "thread-concurrency" },
+          { text: "分布式锁设计", icon: "lock", link: "distributed-lock" },
+          { text: "JVM 调优实战", icon: "wrench", link: "jvm-tuning" },
+        ],
+      },
+      {
+        text: "AI Agent 工程化",
+        icon: "robot",
+        prefix: "ai-agent-engineering/",
+        children: [
+          { text: "Function Call 全链路", icon: "code", link: "function-call" },
+          { text: "Multi-Agent 编排", icon: "sitemap", link: "multi-agent-orchestration" },
+          { text: "Skill vs MCP vs A2A", icon: "balance-scale", link: "skill-mcp-a2a" },
+          { text: "Agent Memory 机制", icon: "memory", link: "agent-memory" },
+        ],
+      },
+      {
+        text: "MCP 协议与网关",
+        icon: "server",
+        prefix: "mcp-gateway/",
+        children: [
+          { text: "MCP 协议深度", icon: "book-open", link: "protocol-deep-dive" },
+          { text: "网关搭建实战", icon: "server", link: "gateway-build" },
+          { text: "OpenAPI 转换", icon: "exchange-alt", link: "openapi-to-mcp" },
+        ],
+      },
+      {
+        text: "RAG 与向量数据库",
+        icon: "search",
+        prefix: "rag-vector-db/",
+        children: [
+          { text: "RAG 端到端搭建", icon: "search", link: "rag-end-to-end" },
+          { text: "Embedding 选型", icon: "chart-bar", link: "embedding-guide" },
+          { text: "向量数据库选型", icon: "database", link: "vector-database" },
+        ],
+      },
+      {
+        text: "系统设计",
+        icon: "project-diagram",
+        prefix: "system-design/",
+        children: [
+          { text: "答题框架与题库", icon: "project-diagram", link: "framework-and-cases" },
+        ],
+      },
+      {
+        text: "团队建设",
+        icon: "users-cog",
+        prefix: "team-process/",
+        children: [
+          { text: "流程建设标准", icon: "users-cog", link: "standards" },
         ],
       },
     ],

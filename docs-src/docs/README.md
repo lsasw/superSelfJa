@@ -130,9 +130,11 @@ icon: book
 - [具身智能](./ai-applications/98-embodied-ai.md)
 - **[AI 面试题库](./ai-applications/101-ai-interview-qa.md)** — 6 大能力维度 + 系统提升方案
 
-### 13. 中间件（待添加）
-- 消息队列 — Kafka、RabbitMQ
-- 搜索引擎 — Elasticsearch 实战
-
-### 14. 微服务（待添加）
-- Spring Cloud — 服务治理
+### 13. 实战专题
+- **[AI Agent 工程化](./ai-agent-engineering/)** — Function Call / Multi-Agent / Memory
+- **[MCP 协议与网关](./mcp-gateway/)** — 协议深度 / 网关搭建 / OpenAPI 转换
+- **[RAG 与向量数据库](./rag-vector-db/)** — 端到端 / Embedding 选型 / 向量库对比
+- **[Java 并发与 JVM](./java-concurrency-jvm/)** — 并发实战 / 分布式锁 / JVM 调优
+- **[系统设计](./system-design/)** — 七步框架 / 12 周题库
+- **[数据库进阶](./database/)** — MySQL 索引 / Redis 三大问题 / Kafka / Spring 自动配置
+- **[团队建设](./team-process/)** — Wiki 规范 / 模拟面试 / Code Review / 技术雷达
