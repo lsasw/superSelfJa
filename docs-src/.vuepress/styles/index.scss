@@ -84,14 +84,40 @@ blockquote {
 
 /* --- 侧边栏优化 --- */
 .vp-sidebar {
-  .vp-sidebar-link {
-    border-radius: 6px;
-    padding: 0.35rem 0.75rem;
-    transition: background-color 0.2s ease;
+  // 滚动平滑 + 间距优化
+  scroll-behavior: smooth;
 
+  // 分组标题样式增强
+  .vp-sidebar-group > .vp-sidebar-heading {
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--theme-color);
+    }
+  }
+
+  // 链接项
+  .vp-sidebar-link {
+    border-radius: 0 6px 6px 0;
+    padding: 0.4rem 0.75rem 0.4rem 1rem;
+    margin: 1px 0;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+    color: var(--text-color);
+
+    &:hover {
+      background-color: rgba(37, 99, 235, 0.04);
+      border-left-color: rgba(37, 99, 235, 0.3);
+    }
+
+    // 当前活跃文章 — 蓝色底色 + 左侧指示条
     &.active {
       background-color: rgba(37, 99, 235, 0.08);
+      border-left-color: var(--theme-color);
       font-weight: 600;
+      color: var(--theme-color);
     }
   }
 }

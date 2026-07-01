@@ -69,7 +69,8 @@ export default hopeTheme({
   ],
 
   // ============================================================
-  //  侧边栏
+  //  侧边栏 — 所有分组默认折叠，只展开当前活跃页面所在分组
+  //  通过 collapsible: true + 主题自动定位实现
   // ============================================================
   sidebar: {
     "/docs/": [
@@ -78,6 +79,7 @@ export default hopeTheme({
         text: "Java 设计模式",
         icon: "puzzle-piece",
         prefix: "java-patterns/",
+        collapsible: true,
         children: [
           { text: "创建型模式", icon: "code", link: "creation" },
           { text: "结构型模式", icon: "project-diagram", link: "structural" },
@@ -88,6 +90,7 @@ export default hopeTheme({
         text: "Spring 核心",
         icon: "leaf",
         prefix: "spring-core/",
+        collapsible: true,
         children: [
           { text: "IoC 容器", icon: "box", link: "ioc" },
           { text: "AOP 切面", icon: "layer-group", link: "aop" },
@@ -98,6 +101,7 @@ export default hopeTheme({
         text: "Spring Boot",
         icon: "boot",
         prefix: "spring-boot/",
+        collapsible: true,
         children: [
           { text: "自动配置原理", icon: "cogs", link: "auto-config" },
         ],
@@ -106,6 +110,7 @@ export default hopeTheme({
         text: "数据库",
         icon: "database",
         prefix: "database/",
+        collapsible: true,
         children: [
           { text: "MySQL 进阶", icon: "server", link: "mysql" },
           { text: "MongoDB 实战", icon: "leaf", link: "mongodb" },
@@ -116,6 +121,7 @@ export default hopeTheme({
         text: "AI 基础",
         icon: "globe",
         prefix: "ai-foundations/",
+        collapsible: true,
         children: [
           { text: "AI 全景概览", icon: "globe", link: "01-ai-overview" },
           { text: "机器学习基础", icon: "brain", link: "02-machine-learning-basics" },
@@ -138,6 +144,7 @@ export default hopeTheme({
         text: "经典机器学习",
         icon: "brain",
         prefix: "ai-ml-classic/",
+        collapsible: true,
         children: [
           { text: "线性回归", icon: "chart-line", link: "16-linear-regression" },
           { text: "逻辑回归", icon: "chart-line", link: "17-logistic-regression" },
@@ -160,6 +167,7 @@ export default hopeTheme({
         text: "深度学习基础",
         icon: "network-wired",
         prefix: "ai-dl-fundamentals/",
+        collapsible: true,
         children: [
           { text: "神经网络基础", icon: "network-wired", link: "31-neural-network-basics" },
           { text: "反向传播", icon: "retweet", link: "32-backpropagation" },
@@ -182,6 +190,7 @@ export default hopeTheme({
         text: "PyTorch 实战",
         icon: "fire",
         prefix: "ai-pytorch/",
+        collapsible: true,
         children: [
           { text: "PyTorch 基础", icon: "fire", link: "46-pytorch-basics" },
           { text: "张量操作", icon: "cubes", link: "47-tensor-operation" },
@@ -204,6 +213,7 @@ export default hopeTheme({
         text: "大语言模型",
         icon: "robot",
         prefix: "ai-llm/",
+        collapsible: true,
         children: [
           { text: "LLM 综述", icon: "brain", link: "61-llm-overview" },
           { text: "GPT 演进", icon: "code-branch", link: "62-gpt-evolution" },
@@ -226,6 +236,7 @@ export default hopeTheme({
         text: "AI 工程化",
         icon: "rocket",
         prefix: "ai-engineering/",
+        collapsible: true,
         children: [
           { text: "模型部署概述", icon: "rocket", link: "76-model-deployment" },
           { text: "ONNX 标准", icon: "exchange-alt", link: "77-onnx" },
@@ -247,6 +258,7 @@ export default hopeTheme({
         text: "AI 应用开发",
         icon: "user-astronaut",
         prefix: "ai-applications/",
+        collapsible: true,
         children: [
           { text: "AI Agent", icon: "robot", link: "91-ai-agent" },
           { text: "多模态 AI", icon: "image", link: "92-multimodal" },
@@ -263,6 +275,7 @@ export default hopeTheme({
         text: "数据库进阶",
         icon: "database",
         prefix: "database/",
+        collapsible: true,
         children: [
           { text: "MySQL 索引与 MVCC", icon: "server", link: "mysql-advanced" },
           { text: "Redis 三大问题", icon: "bolt", link: "redis-advanced" },
@@ -273,6 +286,7 @@ export default hopeTheme({
         text: "Java 并发与 JVM",
         icon: "sync",
         prefix: "java-concurrency-jvm/",
+        collapsible: true,
         children: [
           { text: "并发编程实战", icon: "sync", link: "thread-concurrency" },
           { text: "分布式锁设计", icon: "lock", link: "distributed-lock" },
@@ -283,6 +297,7 @@ export default hopeTheme({
         text: "AI Agent 工程化",
         icon: "robot",
         prefix: "ai-agent-engineering/",
+        collapsible: true,
         children: [
           { text: "Function Call 全链路", icon: "code", link: "function-call" },
           { text: "Multi-Agent 编排", icon: "sitemap", link: "multi-agent-orchestration" },
@@ -294,6 +309,7 @@ export default hopeTheme({
         text: "MCP 协议与网关",
         icon: "server",
         prefix: "mcp-gateway/",
+        collapsible: true,
         children: [
           { text: "MCP 协议深度", icon: "book-open", link: "protocol-deep-dive" },
           { text: "网关搭建实战", icon: "server", link: "gateway-build" },
@@ -304,6 +320,7 @@ export default hopeTheme({
         text: "RAG 与向量数据库",
         icon: "search",
         prefix: "rag-vector-db/",
+        collapsible: true,
         children: [
           { text: "RAG 端到端搭建", icon: "search", link: "rag-end-to-end" },
           { text: "Embedding 选型", icon: "chart-bar", link: "embedding-guide" },
@@ -314,6 +331,7 @@ export default hopeTheme({
         text: "系统设计",
         icon: "project-diagram",
         prefix: "system-design/",
+        collapsible: true,
         children: [
           { text: "答题框架与题库", icon: "project-diagram", link: "framework-and-cases" },
         ],
@@ -322,6 +340,7 @@ export default hopeTheme({
         text: "团队建设",
         icon: "users-cog",
         prefix: "team-process/",
+        collapsible: true,
         children: [
           { text: "流程建设标准", icon: "users-cog", link: "standards" },
         ],
