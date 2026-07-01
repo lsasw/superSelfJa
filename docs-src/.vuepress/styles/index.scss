@@ -812,14 +812,14 @@ h2 {
   /* h2 左侧装饰线 */
   position: relative;
   padding-left: 0.8rem;
-  
+
   &::before {
     content: "";
     position: absolute;
     left: 0;
     top: 0.15em;
-    bottom: 0.45rem;
     width: 3.5px;
+    height: 1.2em;
     background: linear-gradient(180deg, var(--theme-color), var(--accent-purple));
     border-radius: 2px;
   }
