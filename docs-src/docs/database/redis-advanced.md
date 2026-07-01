@@ -123,7 +123,7 @@ public String getWithMutex(String key) {
 
 ### 配置建议
 
-```conf
+```ini
 # redis.conf — 生产环境推荐配置
 
 # RDB：每 5 分钟有 1 次写入就快照

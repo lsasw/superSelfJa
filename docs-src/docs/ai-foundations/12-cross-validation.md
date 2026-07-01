@@ -26,5 +26,5 @@ order: 12
 
 ### 防止数据泄露
 
-> **上一篇**: [偏差与方差](./11-bbias-variance.md)
+> **上一篇**: [偏差与方差](./11-bias-variance.md)
 > **下一篇**: [梯度下降](./13-gradient-descent.md)
