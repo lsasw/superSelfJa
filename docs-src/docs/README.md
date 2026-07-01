@@ -125,11 +125,10 @@ icon: book
 - [视觉语言模型](./ai-applications/93-vision-language.md)
 - [代码大模型](./ai-applications/94-code-llm.md)
 - [AI 搜索](./ai-applications/95-ai-search.md)
-- [推荐系统](./ai-applications/96-recommendation.md)
-- [AI for Science](./ai-applications/97-ai-science.md)
-- [具身智能](./ai-applications/98-embodied.md)
-- [AI 安全](./ai-applications/99-ai-safety.md)
-- [未来趋势](./ai-applications/100-future.md)
+- [推荐系统](./ai-applications/96-recommendation-ai.md)
+- [AI for Science](./ai-applications/97-ai-for-science.md)
+- [具身智能](./ai-applications/98-embodied-ai.md)
+- **[AI 面试题库](./ai-applications/101-ai-interview-qa.md)** — 6 大能力维度 + 系统提升方案
 
 ### 13. 中间件（待添加）
 - 消息队列 — Kafka、RabbitMQ

@@ -1,0 +1,166 @@
+/* ============================================================
+   超级个体技术文档 — 自定义主题样式
+   ============================================================ */
+
+/* --- 主题色变量 --- */
+:root {
+  // 主色调：深邃蓝
+  --theme-color: #2563eb;
+  --theme-color-light: #3b82f6;
+  --theme-color-dark: #1d4ed8;
+
+  // 内容宽度
+  --content-width: 860px;
+
+  // 字体
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  --font-family-heading: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+}
+
+/* --- 首页 Hero 区域优化 --- */
+.vp-hero-info-wrapper {
+  .vp-hero-image {
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.12));
+  }
+}
+
+/* --- 首页 Highlights 卡片优化 --- */
+.vp-highlight {
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* --- 代码块美化 --- */
+div[class*="language-"] {
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  &::before {
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.6;
+  }
+}
+
+/* --- 表格样式 --- */
+table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Blockquote 提示框 --- */
+blockquote {
+  border-left-width: 4px;
+  border-radius: 0 8px 8px 0;
+  background: rgba(37, 99, 235, 0.04);
+  padding: 1rem 1.25rem;
+}
+
+/* --- 页脚样式 --- */
+.vp-footer {
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  a {
+    color: var(--theme-color);
+    font-weight: 500;
+  }
+}
+
+/* --- 侧边栏优化 --- */
+.vp-sidebar {
+  .vp-sidebar-link {
+    border-radius: 6px;
+    padding: 0.35rem 0.75rem;
+    transition: background-color 0.2s ease;
+
+    &.active {
+      background-color: rgba(37, 99, 235, 0.08);
+      font-weight: 600;
+    }
+  }
+}
+
+/* --- 页内标题美化 --- */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--theme-color-light);
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+/* --- Badge 组件增强 --- */
+.vp-badge {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* --- 首页统计卡片 --- */
+.stats-grid {
+  margin: 1.5rem 0;
+
+  table {
+    border: none;
+    box-shadow: none;
+
+    td {
+      border: none;
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}
+
+.stat-card {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(59, 130, 246, 0.03));
+  border: 1px solid rgba(37, 99, 235, 0.1);
+
+  strong {
+    font-size: 1.4rem;
+  }
+}
+
+/* --- 响应式优化 --- */
+@media (max-width: 719px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+}

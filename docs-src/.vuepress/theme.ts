@@ -14,131 +14,47 @@ export default hopeTheme({
 
   docsDir: "docs-src",
 
-  // 导航栏
+  // ============================================================
+  //  顶部导航栏 — Java 生态 / AI 生态 / 面试题库 三大分组
+  // ============================================================
   navbar: [
     "/",
     "/docs/",
     {
-      text: "设计模式",
-      icon: "puzzle-piece",
-      prefix: "/docs/java-patterns/",
+      text: "Java 生态",
+      icon: "mug-hot",
+      prefix: "/docs/",
       children: [
-        { text: "创建型模式", icon: "code", link: "creation" },
-        { text: "结构型模式", icon: "project-diagram", link: "structural" },
-        { text: "行为型模式", icon: "exchange-alt", link: "behavioral" },
+        { text: "设计模式", icon: "puzzle-piece", link: "java-patterns/" },
+        { text: "Spring 核心", icon: "leaf", link: "spring-core/" },
+        { text: "Spring Boot", icon: "boot", link: "spring-boot/" },
+        { text: "数据库", icon: "database", link: "database/" },
       ],
     },
     {
-      text: "Spring",
-      icon: "leaf",
-      prefix: "/docs/spring-core/",
-      children: [
-        { text: "IoC 容器", icon: "box", link: "ioc" },
-        { text: "AOP 切面", icon: "layer-group", link: "aop" },
-        { text: "事务管理", icon: "sync", link: "transaction" },
-      ],
-    },
-    {
-      text: "Spring Boot",
-      icon: "boot",
-      prefix: "/docs/spring-boot/",
-      children: [
-        { text: "自动配置", icon: "cogs", link: "auto-config" },
-      ],
-    },
-    {
-      text: "AI 基础",
-      icon: "globe",
-      prefix: "/docs/ai-foundations/",
-      children: [
-        { text: "AI 全景概览", icon: "globe", link: "01-ai-overview" },
-        { text: "机器学习基础", icon: "brain", link: "02-machine-learning-basics" },
-        { text: "线性代数基础", icon: "superscript", link: "03-linear-algebra" },
-        { text: "概率与统计", icon: "chart-bar", link: "04-probability-statistics" },
-        { text: "微积分基础", icon: "square-root-alt", link: "05-calculus-for-ml" },
-      ],
-    },
-    {
-      text: "机器学习",
+      text: "AI 生态",
       icon: "brain",
-      prefix: "/docs/ai-ml-classic/",
+      prefix: "/docs/",
       children: [
-        { text: "线性回归", icon: "chart-line", link: "16-线性回归" },
-        { text: "逻辑回归", icon: "chart-line", link: "17-逻辑回归" },
-        { text: "决策树", icon: "tree", link: "18-决策树" },
-        { text: "随机森林", icon: "tree", link: "19-随机森林" },
-        { text: "支持向量机", icon: "project-diagram", link: "20-支持向量机" },
+        { text: "AI 基础", icon: "globe", link: "ai-foundations/" },
+        { text: "经典机器学习", icon: "chart-line", link: "ai-ml-classic/" },
+        { text: "深度学习", icon: "network-wired", link: "ai-dl-fundamentals/" },
+        { text: "PyTorch 实战", icon: "fire", link: "ai-pytorch/" },
+        { text: "大语言模型", icon: "robot", link: "ai-llm/" },
+        { text: "AI 工程化", icon: "rocket", link: "ai-engineering/" },
+        { text: "AI 应用", icon: "user-astronaut", link: "ai-applications/" },
       ],
     },
     {
-      text: "深度学习",
-      icon: "network-wired",
-      prefix: "/docs/ai-dl-fundamentals/",
-      children: [
-        { text: "神经网络基础", icon: "network-wired", link: "31-neural-network-basics" },
-        { text: "反向传播", icon: "retweet", link: "32-backpropagation" },
-        { text: "CNN 基础", icon: "th", link: "37-cnn-basics" },
-        { text: "Transformer", icon: "project-diagram", link: "42-transformer" },
-        { text: "GAN", icon: "random", link: "43-gan" },
-      ],
-    },
-    {
-      text: "PyTorch 实战",
-      icon: "fire",
-      prefix: "/docs/ai-pytorch/",
-      children: [
-        { text: "PyTorch 基础", icon: "fire", link: "46-pytorch-basics" },
-        { text: "张量操作", icon: "cubes", link: "47-tensor-operation" },
-        { text: "自动求导", icon: "calculator", link: "48-autograd" },
-        { text: "构建神经网络", icon: "network-wired", link: "49-build-nn" },
-      ],
-    },
-    {
-      text: "大语言模型",
-      icon: "robot",
-      prefix: "/docs/ai-llm/",
-      children: [
-        { text: "LLM 综述", icon: "brain", link: "61-llm-overview" },
-        { text: "GPT 演进", icon: "code-branch", link: "62-gpt-evolution" },
-        { text: "Prompt 工程", icon: "terminal", link: "73-prompt-engineering" },
-        { text: "RAG 检索增强", icon: "search", link: "74-rag" },
-      ],
-    },
-    {
-      text: "AI 工程化",
-      icon: "rocket",
-      prefix: "/docs/ai-engineering/",
-      children: [
-        { text: "模型部署概述", icon: "rocket", link: "76-model-deployment" },
-        { text: "ONNX 标准", icon: "exchange-alt", link: "77-onnx" },
-        { text: "TensorRT", icon: "bolt", link: "78-tensorrt" },
-        { text: "模型量化", icon: "compress", link: "79-model-quantization" },
-        { text: "vLLM 服务", icon: "server", link: "83-vllm" },
-      ],
-    },
-    {
-      text: "AI 应用",
-      icon: "robot",
-      prefix: "/docs/ai-applications/",
-      children: [
-        { text: "AI Agent", icon: "robot", link: "91-ai-agent" },
-        { text: "多模态 AI", icon: "image", link: "92-multimodal" },
-        { text: "视觉语言模型", icon: "eye", link: "93-vision-language" },
-      ],
-    },
-    {
-      text: "数据库",
-      icon: "database",
-      prefix: "/docs/database/",
-      children: [
-        { text: "MySQL", icon: "server", link: "mysql" },
-        { text: "MongoDB", icon: "leaf", link: "mongodb" },
-        { text: "Redis", icon: "bolt", link: "redis" },
-      ],
+      text: "面试题库",
+      icon: "clipboard-list",
+      link: "/docs/ai-applications/101-ai-interview-qa",
     },
   ],
 
-  // 侧边栏
+  // ============================================================
+  //  侧边栏
+  // ============================================================
   sidebar: {
     "/docs/": [
       "",
@@ -168,6 +84,16 @@ export default hopeTheme({
         prefix: "spring-boot/",
         children: [
           { text: "自动配置原理", icon: "cogs", link: "auto-config" },
+        ],
+      },
+      {
+        text: "数据库",
+        icon: "database",
+        prefix: "database/",
+        children: [
+          { text: "MySQL 进阶", icon: "server", link: "mysql" },
+          { text: "MongoDB 实战", icon: "leaf", link: "mongodb" },
+          { text: "Redis 缓存", icon: "bolt", link: "redis" },
         ],
       },
       {
@@ -303,44 +229,58 @@ export default hopeTheme({
       },
       {
         text: "AI 应用开发",
-        icon: "robot",
+        icon: "user-astronaut",
         prefix: "ai-applications/",
         children: [
           { text: "AI Agent", icon: "robot", link: "91-ai-agent" },
           { text: "多模态 AI", icon: "image", link: "92-multimodal" },
           { text: "视觉语言模型", icon: "eye", link: "93-vision-language" },
-        ],
-      },
-      {
-        text: "数据库",
-        icon: "database",
-        prefix: "database/",
-        children: [
-          { text: "MySQL 进阶", icon: "server", link: "mysql" },
-          { text: "MongoDB 实战", icon: "leaf", link: "mongodb" },
-          { text: "Redis 缓存", icon: "bolt", link: "redis" },
+          { text: "代码大模型", icon: "code", link: "94-code-llm" },
+          { text: "AI 搜索", icon: "search", link: "95-ai-search" },
+          { text: "推荐系统", icon: "thumbs-up", link: "96-recommendation-ai" },
+          { text: "AI for Science", icon: "flask", link: "97-ai-for-science" },
+          { text: "具身智能", icon: "robot", link: "98-embodied-ai" },
+          { text: "AI 面试题库", icon: "clipboard-list", link: "101-ai-interview-qa" },
         ],
       },
     ],
   },
 
-  footer: "基于 VuePress + Theme Hope 构建",
+  // ============================================================
+  //  页脚
+  // ============================================================
+  footer: `基于 <a href="https://vuepress.vuejs.org/">VuePress</a> + <a href="https://theme-hope.vuejs.press/">Theme Hope</a> 构建 | 
+<a href="https://github.com/lsasw/superSelfJa">GitHub</a>`,
 
   displayFooter: true,
 
-  // 页面元数据
+  // ============================================================
+  //  页面元数据
+  // ============================================================
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
   },
 
-  // Markdown 增强
+  // ============================================================
+  //  主题插件 & Markdown 增强
+  // ============================================================
   markdown: {
     tasklist: true,
   },
 
-  // 主题插件
   plugins: {
-    comment: false,
+    // 代码复制
+    copyCode: true,
+    // 图片预览
     photoSwipe: true,
+    // 页面信息（阅读时间、字数等）
+    components: {
+      components: ["Badge", "BiliBili", "CodePen", "FontIcon", "PDF", "StackBlitz", "VideoPlayer", "YouTube"],
+    },
+    // 搜索
+    searchPro: {
+      indexContent: true,
+      autoSuggestions: true,
+    },
   },
 });
