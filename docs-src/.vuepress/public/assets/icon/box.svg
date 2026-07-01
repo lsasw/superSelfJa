@@ -1,0 +1,24 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <!-- 3D 立方体 - 顶面 -->
+  <polygon points="100,30 170,65 100,100 30,65" fill="url(#boxGrad)" opacity="0.9"/>
+  <!-- 左侧面 -->
+  <polygon points="30,65 100,100 100,160 30,125" fill="#1e40af" opacity="0.7"/>
+  <!-- 右侧面 -->
+  <polygon points="100,100 170,65 170,125 100,160" fill="#1d4ed8" opacity="0.85"/>
+  <!-- 齿轮装饰 -->
+  <circle cx="100" cy="95" r="18" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.6"/>
+  <circle cx="100" cy="95" r="8" fill="#ffffff" opacity="0.5"/>
+  <!-- 齿轮齿 -->
+  <line x1="100" y1="77" x2="100" y2="81" stroke="#ffffff" stroke-width="2.5" opacity="0.5"/>
+  <line x1="100" y1="109" x2="100" y2="113" stroke="#ffffff" stroke-width="2.5" opacity="0.5"/>
+  <line x1="82" y1="95" x2="86" y2="95" stroke="#ffffff" stroke-width="2.5" opacity="0.5"/>
+  <line x1="114" y1="95" x2="118" y2="95" stroke="#ffffff" stroke-width="2.5" opacity="0.5"/>
+  <!-- Java 标记 -->
+  <text x="100" y="180" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#2563eb" opacity="0.8">JAVA</text>
+</svg>

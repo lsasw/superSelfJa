@@ -1,0 +1,24 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="guideGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <!-- 指南针外圈 -->
+  <circle cx="100" cy="95" r="50" fill="none" stroke="url(#guideGrad)" stroke-width="4" opacity="0.7"/>
+  <circle cx="100" cy="95" r="42" fill="none" stroke="url(#guideGrad)" stroke-width="1.5" opacity="0.3"/>
+  <!-- 指南针中心 -->
+  <circle cx="100" cy="95" r="6" fill="#06b6d4"/>
+  <!-- 北指针 -->
+  <polygon points="100,50 94,95 100,90 106,95" fill="#2563eb"/>
+  <!-- 南指针 -->
+  <polygon points="100,140 94,95 100,100 106,95" fill="#06b6d4" opacity="0.6"/>
+  <!-- 路径箭头 (->上右) -->
+  <polyline points="40,155 90,120 130,75 155,55" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <polygon points="148,50 162,58 152,62" fill="#2563eb" opacity="0.7"/>
+  <!-- 起始点 -->
+  <circle cx="40" cy="158" r="5" fill="#06b6d4" opacity="0.7"/>
+  <!-- 路径标记 -->
+  <text x="100" y="180" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#06b6d4" opacity="0.8">PATH</text>
+</svg>

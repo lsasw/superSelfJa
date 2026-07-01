@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 六边形背景 -->
+  <polygon
+    points="512,132 812,305 812,651 512,824 212,651 212,305"
+    fill="url(#logoGrad)"
+    stroke="#1d4ed8"
+    stroke-width="6"
+    stroke-linejoin="round"
+  />
+
+  <!-- 六边形内边框 -->
+  <polygon
+    points="512,198 774,348 774,608 512,758 250,608 250,348"
+    fill="none"
+    stroke="rgba(255,255,255,0.15)"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+
+  <!-- 几何 S 字母 -->
+  <path
+    d="M 385,340
+       L 639,340
+       L 639,440
+       L 460,440
+       L 460,510
+       L 639,510
+       L 639,610
+       L 460,610
+       L 460,540
+       L 564,540
+       L 564,410
+       L 385,410
+       Z"
+    fill="#ffffff"
+    opacity="0.95"
+  />
+
+  <!-- S 上的科技断点——AI 节点 -->
+  <circle cx="564" cy="475" r="28" fill="url(#glowGrad)"/>
+  <circle cx="564" cy="475" r="12" fill="#ffffff"/>
+</svg>

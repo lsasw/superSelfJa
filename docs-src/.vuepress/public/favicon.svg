@@ -1,0 +1,25 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <!-- 圆角六边形 -->
+  <polygon
+    points="64,10 116,40 116,88 64,118 12,88 12,40"
+    fill="url(#favGrad)"
+    stroke="#1d4ed8"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  <!-- 简化 S -->
+  <path
+    d="M 42,38 L 86,38 L 86,50 L 55,50 L 55,62 L 86,62 L 86,74 L 55,74 L 55,65 L 73,65 L 73,47 L 42,47 Z"
+    fill="#ffffff"
+    opacity="0.95"
+  />
+  <!-- AI 节点 -->
+  <circle cx="73" cy="56" r="5" fill="#60a5fa"/>
+  <circle cx="73" cy="56" r="2.5" fill="#ffffff"/>
+</svg>

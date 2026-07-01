@@ -8,7 +8,10 @@ export default hopeTheme({
     url: "https://github.com/lsasw",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo.svg",
+  logoDark: "/logo.svg",
+
+  favicon: "/favicon.ico",
 
   repo: "https://github.com/lsasw/superSelfJa",
 
