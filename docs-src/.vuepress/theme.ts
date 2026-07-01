@@ -290,8 +290,8 @@ export default hopeTheme({
     url: "https://github.com/lsasw",
   },
 
-  logo: "/logo.svg",
-  logoDark: "/logo.svg",
+  logo: "/avatar-lg.png",
+  logoDark: "/avatar-lg.png",
 
   favicon: "/favicon.ico",
 

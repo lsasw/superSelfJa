@@ -3,8 +3,8 @@ home: true
 icon: home
 heroText: 超级个体技术文档
 tagline: Java 后端工程 × AI 应用开发 × 系统设计 — 从入门到前沿的全栈技术体系，赋能每一位技术人
-heroImage: /logo.svg
-heroImageDark: /logo.svg
+heroImage: /avatar-lg.png
+heroImageDark: /avatar-lg.png
 heroFullScreen: true
 
 bgImage: /assets/icon/hero-banner.svg
