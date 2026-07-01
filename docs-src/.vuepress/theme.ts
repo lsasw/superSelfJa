@@ -344,6 +344,28 @@ export default hopeTheme({
     "/docs/java-concurrency-jvm/": javaSidebar,
 
     // -----------------------------------------------
+    //  面试题库 — 独立精简侧边栏（避免显示整个 AI 生态）
+    // -----------------------------------------------
+    "/docs/ai-applications/101-ai-interview-qa": [
+      {
+        text: "AI 应用开发",
+        icon: "user-astronaut",
+        collapsible: false,
+        children: [
+          { text: "AI Agent", link: "/docs/ai-applications/91-ai-agent" },
+          { text: "多模态 AI", link: "/docs/ai-applications/92-multimodal" },
+          { text: "视觉语言模型", link: "/docs/ai-applications/93-vision-language" },
+          { text: "代码大模型", link: "/docs/ai-applications/94-code-llm" },
+          { text: "AI 搜索", link: "/docs/ai-applications/95-ai-search" },
+          { text: "推荐系统", link: "/docs/ai-applications/96-recommendation-ai" },
+          { text: "AI for Science", link: "/docs/ai-applications/97-ai-for-science" },
+          { text: "具身智能", link: "/docs/ai-applications/98-embodied-ai" },
+          { text: "AI 面试题库", link: "/docs/ai-applications/101-ai-interview-qa" },
+        ],
+      },
+    ],
+
+    // -----------------------------------------------
     //  AI 生态 — 点击顶部 "AI 生态" 时显示
     // -----------------------------------------------
     "/docs/ai-foundations/": aiSidebar,
