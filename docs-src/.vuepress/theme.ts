@@ -248,6 +248,14 @@ const practicalSidebar = [
     ],
   },
   {
+    text: "Agent 框架",
+    icon: "robot",
+    collapsible: true,
+    children: [
+      { text: "HarnessX", icon: "robot", link: "/docs/ai-agent-frameworks/harnessx" },
+    ],
+  },
+  {
     text: "团队建设",
     icon: "users-cog",
     collapsible: true,
@@ -319,6 +327,7 @@ export default hopeTheme({
         { text: "MCP 网关", icon: "server", link: "/docs/mcp-gateway/" },
         { text: "RAG 向量数据库", icon: "search", link: "/docs/rag-vector-db/" },
         { text: "系统设计", icon: "project-diagram", link: "/docs/system-design/" },
+        { text: "Agent 框架", icon: "robot", link: "/docs/ai-agent-frameworks/" },
         { text: "团队建设", icon: "users-cog", link: "/docs/team-process/" },
       ],
     },
@@ -380,6 +389,7 @@ export default hopeTheme({
     //  实战专题 — 点击顶部 "实战专题" 时显示
     // -----------------------------------------------
     "/docs/ai-agent-engineering/": practicalSidebar,
+    "/docs/ai-agent-frameworks/": practicalSidebar,
     "/docs/mcp-gateway/": practicalSidebar,
     "/docs/rag-vector-db/": practicalSidebar,
     "/docs/system-design/": practicalSidebar,
