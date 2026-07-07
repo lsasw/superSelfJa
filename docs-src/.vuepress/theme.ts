@@ -46,6 +46,7 @@ const javaSidebar = [
       { text: "MySQL 索引与 MVCC", icon: "server", link: "/docs/database/mysql-advanced" },
       { text: "Redis 三大问题", icon: "bolt", link: "/docs/database/redis-advanced" },
       { text: "Kafka + 自动配置", icon: "stream", link: "/docs/database/kafka-spring-autoconfig" },
+      { text: "SQLAlchemy 深度指南", icon: "cube", link: "/docs/database/sqlalchemy" },
     ],
   },
   {
@@ -254,6 +255,33 @@ const practicalSidebar = [
     children: [
       { text: "HarnessX", icon: "robot", link: "/docs/ai-agent-frameworks/harnessx" },
       { text: "DeepAgents", icon: "robot", link: "/docs/ai-agent-frameworks/deepagents" },
+      { text: "Pi", icon: "robot", link: "/docs/ai-agent-frameworks/pi" },
+    ],
+  },
+  {
+    text: "AI 开发工具链",
+    icon: "tool",
+    collapsible: true,
+    children: [
+      { text: "Waza 工程习惯", icon: "tool", link: "/docs/ai-dev-tools/waza" },
+      { text: "Taste Skill 前端设计", icon: "palette", link: "/docs/ai-dev-tools/taste-skill" },
+      { text: "Caveman 输出压缩", icon: "compress", link: "/docs/ai-dev-tools/caveman" },
+    ],
+  },
+  {
+    text: "前端技术",
+    icon: "code",
+    collapsible: true,
+    children: [
+      { text: "Pretext 文本布局", icon: "text-height", link: "/docs/frontend-tech/pretext" },
+    ],
+  },
+  {
+    text: "工作流引擎",
+    icon: "history",
+    collapsible: true,
+    children: [
+      { text: "Temporal 持久化执行", icon: "history", link: "/docs/workflow-engine/temporal" },
     ],
   },
   {
@@ -329,6 +357,9 @@ export default hopeTheme({
         { text: "RAG 向量数据库", icon: "search", link: "/docs/rag-vector-db/" },
         { text: "系统设计", icon: "project-diagram", link: "/docs/system-design/" },
         { text: "Agent 框架", icon: "robot", link: "/docs/ai-agent-frameworks/" },
+        { text: "AI 开发工具链", icon: "tool", link: "/docs/ai-dev-tools/" },
+        { text: "前端技术", icon: "code", link: "/docs/frontend-tech/" },
+        { text: "工作流引擎", icon: "history", link: "/docs/workflow-engine/" },
         { text: "团队建设", icon: "users-cog", link: "/docs/team-process/" },
       ],
     },
@@ -391,7 +422,10 @@ export default hopeTheme({
     // -----------------------------------------------
     "/docs/ai-agent-engineering/": practicalSidebar,
     "/docs/ai-agent-frameworks/": practicalSidebar,
+    "/docs/ai-dev-tools/": practicalSidebar,
     "/docs/mcp-gateway/": practicalSidebar,
+    "/docs/frontend-tech/": practicalSidebar,
+    "/docs/workflow-engine/": practicalSidebar,
     "/docs/rag-vector-db/": practicalSidebar,
     "/docs/system-design/": practicalSidebar,
     "/docs/team-process/": practicalSidebar,

@@ -31,6 +31,7 @@ icon: book
 - [MySQL 索引与 MVCC](./database/mysql-advanced.md)
 - [Redis 三大问题](./database/redis-advanced.md)
 - [Kafka + 自动配置](./database/kafka-spring-autoconfig.md)
+- [SQLAlchemy 深度指南](./database/sqlalchemy.md)
 
 ### 并发与 JVM
 - [并发编程实战](./java-concurrency-jvm/thread-concurrency.md)
@@ -153,7 +154,10 @@ icon: book
 ## 实战专题
 
 - [AI Agent 工程化](./ai-agent-engineering/) — Function Call / Multi-Agent / Memory
-- [Agent 框架](./ai-agent-frameworks/) — HarnessX / DeepAgents 等前沿 Agent 框架
+- [Agent 框架](./ai-agent-frameworks/) — HarnessX / DeepAgents / Pi 等前沿 Agent 框架
+- [AI 开发工具链](./ai-dev-tools/) — Waza / Taste Skill / Caveman 等 Agent 技能与工具
+- [前端技术](./frontend-tech/) — Pretext 文本布局等高性能前端库
+- [工作流引擎](./workflow-engine/) — Temporal 持久化执行平台
 - [MCP 协议与网关](./mcp-gateway/) — 协议深度 / 网关搭建 / OpenAPI 转换
 - [RAG 与向量数据库](./rag-vector-db/) — 端到端 / Embedding 选型 / 向量库对比
 - [系统设计](./system-design/) — 答题框架与题库
