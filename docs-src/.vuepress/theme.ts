@@ -253,6 +253,7 @@ const practicalSidebar = [
     collapsible: true,
     children: [
       { text: "HarnessX", icon: "robot", link: "/docs/ai-agent-frameworks/harnessx" },
+      { text: "DeepAgents", icon: "robot", link: "/docs/ai-agent-frameworks/deepagents" },
     ],
   },
   {

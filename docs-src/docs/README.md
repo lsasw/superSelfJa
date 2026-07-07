@@ -153,7 +153,7 @@ icon: book
 ## 实战专题
 
 - [AI Agent 工程化](./ai-agent-engineering/) — Function Call / Multi-Agent / Memory
-- [Agent 框架](./ai-agent-frameworks/) — HarnessX 可组合自进化 Agent 框架
+- [Agent 框架](./ai-agent-frameworks/) — HarnessX / DeepAgents 等前沿 Agent 框架
 - [MCP 协议与网关](./mcp-gateway/) — 协议深度 / 网关搭建 / OpenAPI 转换
 - [RAG 与向量数据库](./rag-vector-db/) — 端到端 / Embedding 选型 / 向量库对比
 - [系统设计](./system-design/) — 答题框架与题库
